@@ -105,7 +105,7 @@ function next_feild(){
 
              // initialization of text animation (typing)
              var typed = new Typed(".u-text-animation--typing", {
-                strings: ["more professional.", "perfect in every way.", "astonishing."],
+                strings: ["more professional.", "perfect.", "astonishing."],
                 typeSpeed: 60,
                 loop: true,
                 backSpeed: 25,
