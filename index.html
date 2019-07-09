@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cove</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    <!-- cove css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <section id='home' class="main--banner" >
+      <div class="inner">
+          <!-- inner top -->
+           <div class="inner--con-div space-even--flex">
+              <h1 class="logo-text--w text--large"> cove</h1>
+              <span class="cen-align--flex">
+                    <a class="button--primary"  onclick="show_slide_modal()">Join waiting list</a>
+              </span>              
+          </div>
+          <!-- inner middle -->
+          <div class="inner--con-div inner--con-middle flex-grow-1 ">
+              <!-- inner left -->
+              <div class="inner-left">
+                <h2>    
+                        Never wait in Pharmacy lines again!                        
+                </h2>
+                <h3>                            
+                        Purchase and manage your medications in one place
+                </h3>
+                <p>
+                        Enjoy all the same services as your local drugstore – with prescription medications hand-delivered directly to you.
+                </p>
+               
+                <!-- <span class="join">
+                    <h3>Join our waiting list</h3>
+                    <div>
+                      <span class="flex-grow-2">
+                            <input  type="email"  placeholder="Type your email here" >
+                        </span>                      
+                    </div>
+                </span> -->
+
+                  
+              </div>
+              <!-- inner right -->
+              <div class="inner-right">
+                    <img src="assets/images/im.jpg" alt="" class="clip-right">               
+              </div>
+          </div>
+
+          <!-- inner down -->
+          <div class="inner--con-div footer">
+              <span>Say hi@cove.com</span>
+              <span class="span2">© cove, 2019 </span>
+          </div>
+      </div>
+
+
+      <!-- form for join -->
+      <div class="SlideWrapper SlideWrapper--close" >
+            <div class="SlideModal SlideModal--right SlideModal--close">
+                <div class="form--div">
+                        <div class="text-app-splash">
+    
+                                <form onsubmit=" return false;">
+                                    <input id="email" class="slideI--inpu-L" name="email" type="email" placeholder="What's your E-mail">
+                                    <input id="phone" class="slideO--inpu-R" name="phone" type="tel" placeholder="and your phone number">
+                                    <button id="nextfeild" onclick="next_feild()">
+                                        <img src="https://cdn.albert.com/static/img/splash/rebrand/button-submit.355af4327fb6.png">
+                                    </button>
+                                </form>
+                                
+                                
+                            </div>
+                            <span id="sucess">Wohoo! You've been added. <Span  id="close" onclick="close_slide_modal()">close</Span></span> 
+                </div>
+                <a class="button--primary add-me"  onclick="send_data()">Add me!</a>
+            </div>
+       </div>         
+    </section>
+    <script src="assets/js/jq-3.3.1.js"></script>
+    <script src="assets/js/cove.js"></script>
+</body>
+</html>
