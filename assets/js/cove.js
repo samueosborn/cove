@@ -102,4 +102,14 @@ function next_feild(){
                 else
                     $('.add-me').hide();
             })
+
+             // initialization of text animation (typing)
+             var typed = new Typed(".u-text-animation--typing", {
+                strings: ["more professional.", "perfect in every way.", "astonishing."],
+                typeSpeed: 60,
+                loop: true,
+                backSpeed: 25,
+                backDelay: 1500
+              });
         });
+

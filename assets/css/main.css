@@ -508,6 +508,11 @@ div.text-app-splash div.divider {
     cursor: pointer;
 } 
 
+.u-text-animation--typing{
+    color: var(--primary);
+   
+} 
+
 /*end feild slide effec  */
 
 /* media queur */
