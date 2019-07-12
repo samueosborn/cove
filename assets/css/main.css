@@ -126,7 +126,11 @@ p {
     height: 70px;
     width: 100%;   
 }
-
+.inner--con-divl {
+    display: flex;
+    height: 50px;
+    width: 100%;
+}
 .flex-grow-1{
    flex-grow: 1;
 }
@@ -313,13 +317,31 @@ p {
 
 .footer span{
    width: 40%;
- 
+   font-size: 0.8rem;
 }
 .footer .span2{
     display: flex;
     justify-content: flex-end;
     color: var(--gray)
  }
+ .footer .spanm{
+    display: flex;
+    justify-content: center;
+   
+ }
+ .spanm > a  {
+   padding-left: 10px;
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: var(--dark);
+ }
+ 
+ .spanm > a:hover 
+{
+     color:var(--primary); 
+     text-decoration:none; 
+     cursor:pointer;  
+}
 /* media queries */
 
 @media (max-width:767px){
