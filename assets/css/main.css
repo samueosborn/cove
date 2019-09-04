@@ -69,8 +69,8 @@ body {
   color: #1e2022;
   text-align: left;
   background-color: #fff;
-  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
-  height: calc(var(--vh, 1vh) * 100);
+  height: 100%; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--%, 1%) * 100);
 }
 input:focus, textarea:focus, select:focus, button:focus{
     outline: none;
@@ -108,7 +108,7 @@ p {
    display: flex;
    justify-content: center;
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    background-color: var(--dark)
 }
 
