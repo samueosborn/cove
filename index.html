@@ -8,23 +8,23 @@
     <meta name="Keywords" content="cove,medications,Pharmacy,prescription,in,ghana,gh,hand-delivered,drugs,pharmacist,online,accra">
     <title>Cove</title>
     <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Bungee&display=swap" rel="stylesheet">
+    
     <!-- cove css -->
     <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- fon awesome -->
+    <script src="assets/js/viewpor.js"></script>
     <script src="assets/js/all.js"></script>
 </head>
 <body>
-    <section id='home' class="main--banner" >
+    <section id='home' class="main--banner " >
       <div class="inner">
           <!-- inner top -->
            <div class="inner--con-div space-even--flex">
-              <h1 class="logo-text--w text--large"> cove</h1>
+              <h1 class=" logo-text--w text--large"> cove<span class="ldc">.</span></h1>
               <span class="cen-align--flex">
-                    <a class="button--primary"  onclick="show_slide_modal()">Join waiting list</a>
-              </span>              
+                <a class="button--primary-2 " href="login.html">Login</a>
+              </span>            
           </div>
           <!-- inner middle -->
           <div class="inner--con-div inner--con-middle flex-grow-1 ">
@@ -39,27 +39,32 @@
                 <p>
                    Enjoy all the same services as your local drugstore – with prescription medications hand-delivered directly to you.
                 </p>
-               
-                <!-- <span class="join">
-                    <h3>Join our waiting list</h3>
-                    <div>
-                      <span class="flex-grow-2">
-                            <input  type="email"  placeholder="Type your email here" >
-                        </span>                      
-                    </div>
-                </span> -->
-
-                  
+              
               </div>
               <!-- inner right -->
               <div class="inner-right">
-                    <img src="assets/images/im.jpg" alt="" class="clip-right">               
+                    <!-- <img src="assets/images/im.jpg" alt="" class="clip-right">                -->
+
+                    <div id="SVGNonStandardHeroShape" class="col-lg-7 svg-preloader">
+                        <div class="px-lg-5">
+                          <!-- SVG Illustration -->
+                          <figure class="ie-non-standard-hero-shape">
+                            <img class="js-svg-injector" src="assets/images/non-standard-hero-shape.svg" alt="Image Description"
+                                 data-img-paths='[
+                                   {"targetId": "#SVGNonStandardHeroShapeImg1", "newPath": "assets/images/Dn8WlNgXUAAYwcY.jpg"},
+                                   {"targetId": "#SVGNonStandardHeroShapeImg2", "newPath": "assets/images/Dn8WlNgXUAAYwcY.jpg"}
+                                 ]'
+                                 data-parent="#SVGNonStandardHeroShape">
+                          </figure>
+                          <!-- End SVG Illustration -->
+                        </div>
+                      </div>
               </div>
           </div>
 
           <!-- inner down -->
           <div class="inner--con-divl footer">
-              <span>Say rx@iamcove.com</span>
+              <span class="text--w">Say hi : rx@iamcove.com</span>
               <span class="spanm">               
                 <a href="https://www.facebook.com/iamcoverx/" target="_blank">
                     <i  class="fab fa-facebook "></i>
@@ -95,8 +100,23 @@
             </div>
        </div>         
     </section>
-    <script src="assets/js/jq-3.3.1.js"></script>    
+    <script src="assets/jquery/dist/jquery.min.js"></script>
+    <script src="assets/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <!-- <script src="assets/js/jq-3.3.1.js"></script>     -->
     <script src="assets/js/typed.min.js"></script>
     <script src="assets/js/cove.js"></script>
+    <script src="assets/js/hs.core.js"></script>
+    <script src="assets/js/components/hs.svg-injector.js"></script>
+    <script src="assets/svg-injector/dist/svg-injector.min.js"></script>
+
+     <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+           // initialization of svg injector module
+      $.HSCore.components.HSSVGIngector.init('.js-svg-injector');
+    });
+
+
+  </script>
 </body>
 </html>
