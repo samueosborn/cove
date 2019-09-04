@@ -55,7 +55,7 @@ main
     flex-direction: column;
     width: 100%;
     flex: 1;
-
+    background: red
 }
 
 div.logo
