@@ -330,6 +330,22 @@ p {
     border: 2px solid var(--primary);
 }
 
+.button--black-2 {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    padding: 2px 20px;
+    color: var(--dark); 
+    border: 2px solid var(--dark);
+}
+
+.info--banner{
+    padding: 0 12px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+}
+
 .cen-align--flex
 {
     display: flex;

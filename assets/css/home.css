@@ -1,0 +1,141 @@
+main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+}
+
+.main--iner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+/* ========================================== */
+.main--iner .day{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1;   
+    justify-content: flex-end;
+    justify-items: flex-end;
+    padding: 0 25px;
+}
+.day .weekday{
+    font-size: 36px;
+    font-weight: bold;
+    color:#000000;
+}
+
+.day .date{
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+}
+
+/* =========================================== */
+.main--iner .overview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 4;
+
+}
+
+.overview .pharmarcist{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+}
+
+.pharmarcist .info{
+    font-size: 14px;
+    font-weight: bold;
+    color:#000000;
+    margin-bottom: 12px;
+}
+.info-icn{
+    font-size: 20px;
+}
+
+.info-btn{
+    font-size: 13.5px;
+    font-weight: bold;
+    color:#000000;
+}
+.overview .medication{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    flex: 1;
+}
+
+.medication .drugs{
+    display: flex;
+    width: 100%; 
+    height: 68px;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.drugs i{
+    font-size: 20px;
+}
+
+.drugs span{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.overview .notification{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    flex: 2;
+
+}
+
+.notification .messages{
+    width: 100%; 
+    height: 150px;
+    align-items: center;
+    display: flex;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-left: 10px;
+}
+
+.notification .messages::-webkit-scrollbar {
+    display: none;
+}
+
+.messages .message{
+    width: 310px;
+    height: 140px;
+    background-color: brown;
+    flex: 0 0 auto;
+    margin-right: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08);
+}
+
+
+.notification .messages{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+.overview .menu{
+    display: flex;
+    width: 95%;
+    flex: 1;
+    background-color:rgb(51, 153, 114);
+}

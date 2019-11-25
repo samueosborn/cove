@@ -54,7 +54,7 @@ main
     display: flex;    
     flex-direction: column;
     width: 100%;
-    flex: 1;
+    flex: 2;
 }
 
 div.logo
